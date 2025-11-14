@@ -47,18 +47,16 @@ export default function Avatar({ expression = "neutral", size = 700 }) {
     };
 
     return (
-        <div className="w-full h-screen flex items-end justify-center bottom-0">
-            <div
-                style={{
-                    width: size,
-                    display: "flex",
-                    justifyContent: "center",
-                }}
-                dangerouslySetInnerHTML={{
-                    __html: `<div style='display:flex;justify-content:center;width:100%'>${avatars[expression] || avatars.neutral}</div>`
-                }}
-            />
-        </div>
+        <div
+            style={{
+                width: size,
+                display: "flex",
+                justifyContent: "center",
+            }}
+            dangerouslySetInnerHTML={{
+                __html: `<div style='display:flex;justify-content:center;width:100%'>${avatars[expression] || avatars.neutral}</div>`
+            }}
+        />
 
 
     );
